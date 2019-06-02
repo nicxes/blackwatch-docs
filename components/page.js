@@ -1,0 +1,59 @@
+import Head from 'next/head'
+
+function Page ({ title, description, children }) {
+  return (
+    <div>
+      <Head>
+        <title>{title || 'Blackwatch'}</title>
+
+        <meta name="description" content={description || 'Blackwatch'} />
+        <meta name="keywords" content="Blackwatch"/>
+        <meta name="author" content="@Nicxes"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </Head>
+
+      {children}
+
+      <style global jsx>{`
+        body {
+          color: #ccc;
+          font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 1em;
+
+          background: #000;
+          margin: 0 20px;
+        }
+        .container {
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          color: #fff;
+          margin: 0 0 20px 0;
+        }
+        h1 {font-size: 40px;}
+        p {
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        pre {
+          margin: 0 0 50px 0;
+          line-height: 40px;
+        }
+        code {
+          background: #212121;
+          border-radius: 5px;
+
+          padding: 15px;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default Page

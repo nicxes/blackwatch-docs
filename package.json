@@ -1,0 +1,29 @@
+{
+  "name": "blackwatch-docs",
+  "version": "1.0.0",
+  "description": "A self-hosted personal bot for discordapp.com, friendly design and very simple lightweight bot.",
+  "author": "Nicolás Miranda <hello@nicxes.com>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicxes/blackwatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicxes/blackwatch/issues"
+  },
+  "homepage": "https://github.com/nicxes/blackwatch#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "@mdx-js/mdx": "^0.15.0-0",
+    "@zeit/next-mdx": "^1.1.0",
+    "remark-emoji": "^2.0.1",
+    "remark-images": "^0.8.1"
+  }
+}
