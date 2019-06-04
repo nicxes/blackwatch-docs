@@ -51,6 +51,34 @@ function Page ({ title, description, children }) {
 
           padding: 15px;
         }
+        table {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 22px;
+
+          border: 1px solid #222;
+          border-radius: 6px;
+
+          width: 100%;
+        }
+        th {
+          color: #fff;
+          font-weight: 400;
+          text-align: left;
+
+          padding: 5px 10px;
+        }
+        td {
+          padding: 5px 10px;
+        }
+        td.code {
+          color: #fff;
+          font-size: 13px;
+          font-family: Monospace;
+        }
+        td.description {
+          color: #999;
+        }
       `}</style>
     </div>
   )
