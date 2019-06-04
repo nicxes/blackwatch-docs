@@ -12,6 +12,8 @@ function Navigation() {
         .navigation {
           padding: 0;
           margin: 0;
+
+          display: none;
         }
         .navigation li {
           list-style: none;
@@ -20,6 +22,10 @@ function Navigation() {
         .navigation li a {color: #ccc;}
         .navigation li a.active {color: #fff;}
         .navigation li a:hover {color: #fff;}
+        
+        @media only screen and (min-width: 769px) {
+          .navigation {display: block;}
+        }
       `}</style>
     </nav>
   )
