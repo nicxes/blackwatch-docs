@@ -41,6 +41,16 @@ function Page ({ title, description, children }) {
           color: #fff;
           text-decoration: none;
         }
+        ul {
+          padding: 0 0 0 12px;
+        }
+        ul li a {
+          color: #999 !important;
+          font-size: 15px;
+        }
+        ul li a:hover {
+          color: #fff !important;
+        }
         pre {
           margin: 0 0 50px 0;
           line-height: 40px;

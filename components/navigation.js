@@ -3,11 +3,13 @@ import Link from './text/link'
 function Navigation() {
   return (
     <nav className="navigation">
-      <li><Link href="/" activeClassName="active"><a>Intro</a></Link></li>
-      <li><Link href="/requirements" activeClassName="active"><a>Requirements</a></Link></li>
-      <li><Link href="/setup" activeClassName="active"><a>Setup</a></Link></li>
-      <li><Link href="/commands" activeClassName="active"><a>Commands</a></Link></li>
-      <li><Link href="/information" activeClassName="active"><a>Information</a></Link></li>
+      <li>
+        <Link href="/" activeClassName="active"><a>Overview</a></Link>
+        <ul>
+          <li><a href="/#help">Getting help</a></li>
+          <li><a href="/#commands">Commands</a></li>
+        </ul>
+      </li>
       <style jsx>{`
         .navigation {
           padding: 0;
