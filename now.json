@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "blackwatch-docs",
+  "alias": "blackwatch.now.sh",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
+}
