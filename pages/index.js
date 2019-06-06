@@ -1,5 +1,6 @@
 import Page from '../components/page'
 
+import Notification from '../components/notify'
 import Header from '../components/header'
 import Navigation from '../components/navigation'
 import Article from '../components/article'
@@ -7,6 +8,7 @@ import Article from '../components/article'
 function Home() {
   return (
     <>
+      <Notification title="Blackwatch is out!" message="Serverless mode, performance and security improvements and more. Coming soon"/>
       <Header/>
       <Page title="Blackwatch — Homepage">
         <main className="page container">
