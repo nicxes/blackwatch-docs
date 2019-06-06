@@ -5,7 +5,7 @@ function Header() {
     <header className="header container">
 
       <div>
-        <a>
+        <a href="/">
           <Logo size="40"/>
         </a>
       </div>
