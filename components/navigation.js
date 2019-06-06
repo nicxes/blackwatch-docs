@@ -21,7 +21,13 @@ function Navigation() {
           list-style: none;
           padding: 10px 0;
         }
-        .navigation li a {color: #ccc;}
+        .navigation li a {
+          color: #ccc;
+          border-left: 1px solid #ccc;
+          padding: 0 0 0 12px;
+
+          transition: all 0.1s ease;
+        }
         .navigation li a.active {color: #fff;}
         .navigation li a:hover {color: #fff;}
         
