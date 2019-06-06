@@ -10,6 +10,7 @@ function Page ({ title, description, children }) {
         <meta name="keywords" content="Blackwatch"/>
         <meta name="author" content="@Nicxes"/>
         
+        <link rel="shortcut icon" type="image/png" href="/static/logo.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
 
@@ -44,9 +45,14 @@ function Page ({ title, description, children }) {
         ul {
           padding: 0 0 0 12px;
         }
+        ul li {
+          padding: 5px 0 !important;
+        }
         ul li a {
           color: #999 !important;
           font-size: 15px;
+
+          border: 0 !important;
         }
         ul li a:hover {
           color: #fff !important;
