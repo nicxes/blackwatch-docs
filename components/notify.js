@@ -1,7 +1,7 @@
 export default function Notify({ title, message }) {
   return (
     <div className="notify">
-      <p>{title + " — " + message}</p>
+      <p>{title} <span className="message">{message}</span></p>
       
       <style jsx>{`
         .notify {
@@ -14,6 +14,9 @@ export default function Notify({ title, message }) {
           text-align: center;
 
           margin: 0;
+        }
+        @media only screen and (max-width: 768px) {
+          .notify p .message {display: none;}
         }
       `}</style>
     </div>
