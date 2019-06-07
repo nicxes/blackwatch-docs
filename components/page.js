@@ -23,11 +23,13 @@ function Page ({ title, description, children }) {
           font-size: 1em;
 
           background: #000;
-          margin: 0 20px;
+          margin: 0;
         }
         .container {
           max-width: 1000px;
           margin: 0 auto;
+
+          padding: 0 20px;
         }
         h1, h2, h3, h4, h5, h6 {
           color: #fff;
