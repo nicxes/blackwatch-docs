@@ -43,7 +43,11 @@ export default class Header extends React.Component {
           }
           
           @media only screen and (min-width: 769px) {
-            .navigation {display: block;}
+            .navigation {
+              display: block;
+              max-heigth: auto;
+              opacity: 1;
+            }
           }
         `}</style>
       </nav>
