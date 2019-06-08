@@ -1,17 +1,6 @@
 import Logo from './logo'
 
 export default class Header extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
-      open: false
-    }
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick(){
-    this.setState({open: !this.state.open})
-  }
   render() {
     return (
       <header className="header container">
@@ -23,7 +12,7 @@ export default class Header extends React.Component {
         </div>
 
         <div className="userbox">
-          <span className={this.state.open ? "menu open": "menu"} onClick={ this.handleClick }>
+          <span className={this.props.open ? "menu open": "menu"} onClick={ this.props.handleClick }>
             <span className="line line-top"></span>
             <span className="line line-mid"></span>
             <span className="line line-bot"></span>
@@ -36,7 +25,7 @@ export default class Header extends React.Component {
             grid-template-columns: 50% 50%;
             align-items: center;
 
-            margin: 50px auto;
+            margin: 20px auto;
           }
           .header .userbox {justify-self: end;}
           .header .menu {
@@ -61,16 +50,17 @@ export default class Header extends React.Component {
           .header .menu .line-mid {margin: 5px 0;}
 
           .header .menu .line-top {
-            transform: ${this.state.open ? "translateY(2px) rotate(48deg)": "none"}
+            transform: ${this.props.open ? "translateY(2px) rotate(48deg)": "none"}
           }
           .header .menu .line-mid {
-            display: ${this.state.open ? "none": "block"}
+            display: ${this.props.open ? "none": "block"}
           }
           .header .menu .line-bot {
-            transform: ${this.state.open ? "rotate(-45deg)": "none"}
+            transform: ${this.props.open ? "rotate(-45deg)": "none"}
           }
 
           @media only screen and (min-width: 769px) {
+            .header {margin: 50px auto;}
             .header .menu {display: none;}
           }
         `}</style>
