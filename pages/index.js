@@ -4,6 +4,7 @@ import Notification from '../components/notify'
 import Header from '../components/header'
 import Navigation from '../components/navigation'
 import Article from '../components/article'
+import Footer from '../components/footer'
 
 class Home extends React.Component {
   constructor() {
@@ -28,6 +29,7 @@ class Home extends React.Component {
             <Article/>
           </main>
         </Page>
+        <Footer/>
 
         <style jsx>{`
           .page {
