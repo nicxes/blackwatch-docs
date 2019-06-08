@@ -25,6 +25,9 @@ export default function Footer() {
           justify-content: center;
         }
         .copyright {
+          text-align: center;
+          line-height: 20px;
+
           margin-bottom: 5px;
         }
         ul {
@@ -54,6 +57,9 @@ export default function Footer() {
           .footer {
             flex-direction: row;
             justify-content: space-between;
+          }
+          .copyright {
+            text-align: left;
           }
         }
       `}</style>
