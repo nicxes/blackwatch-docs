@@ -5,32 +5,46 @@ import Header from '../components/header'
 import Navigation from '../components/navigation'
 import Article from '../components/article'
 
-function Home() {
-  return (
-    <>
-      <Notification title="Blackwatch is out!" message="Serverless mode, performance and security improvements and more. Coming soon"/>
-      <Header/>
-      <Page title="Blackwatch — Homepage">
-        <main className="page container">
-          <Navigation/>
-          <Article/>
-        </main>
-      </Page>
+class Home extends React.Component {
+  constructor() {
+    super()
 
-      <style jsx>{`
-        .page {
-          display: grid;
-          grid-template-columns: 1fr;
-          margin: 50px auto;
-        }
-        @media only screen and (min-width: 769px) {
+    this.state = {
+      open: false
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(){
+    this.setState({open: !this.state.open})
+  }
+  render() {
+    return (
+      <>
+        <Notification title="Blackwatch is out!" message="Serverless mode, performance and security improvements and more. Coming soon"/>
+        <Header open={this.state.open} handleClick={this.handleClick} />
+        <Page title="Blackwatch — Homepage">
+          <main className="page container">
+            <Navigation open={this.state.open}/>
+            <Article/>
+          </main>
+        </Page>
+
+        <style jsx>{`
           .page {
-            grid-template-columns: 280px 1fr;
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 20px auto;
           }
-        }
-      `}</style>
-    </>
-  )
+          @media only screen and (min-width: 769px) {
+            .page {
+              padding: 50px auto;
+              grid-template-columns: 280px 1fr;
+            }
+          }
+        `}</style>
+      </>
+    )
+  }
 }
 
 export default Home
