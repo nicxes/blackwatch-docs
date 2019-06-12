@@ -11,13 +11,15 @@ export default class Header extends React.Component {
           </a>
         </div>
 
-        <div className="userbox">
-          <span className={this.props.open ? "menu open": "menu"} onClick={ this.props.handleClick }>
-            <span className="line line-top"></span>
-            <span className="line line-mid"></span>
-            <span className="line line-bot"></span>
-          </span>
-        </div>
+        <ul className="userbox">
+          <li>
+            <span className={this.props.open ? "menu open": "menu"} onClick={ this.props.handleClick }>
+              <span className="line line-top"></span>
+              <span className="line line-mid"></span>
+              <span className="line line-bot"></span>
+            </span>
+          </li>
+        </ul>
 
         <style jsx>{`
           .header {
@@ -27,7 +29,12 @@ export default class Header extends React.Component {
 
             margin: 20px auto;
           }
-          .header .userbox {justify-self: end;}
+          .header .userbox {
+            padding: 0;
+            margin: 0;
+            justify-self: end;
+          }
+          .header .userbox li {list-style: none;}
           .header .menu {
             cursor: pointer;
             height: 32px;
