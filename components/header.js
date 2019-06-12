@@ -1,4 +1,5 @@
 import Logo from './logo'
+import Link from 'next/link'
 
 export default class Header extends React.Component {
   render() {
@@ -19,6 +20,7 @@ export default class Header extends React.Component {
               <span className="line line-bot"></span>
             </span>
           </li>
+          <li className="chat"><Link href="/chat"><a>Join us</a></Link></li>
         </ul>
 
         <style jsx>{`
@@ -35,6 +37,13 @@ export default class Header extends React.Component {
             justify-self: end;
           }
           .header .userbox li {list-style: none;}
+          .header .userbox .chat {display: none;}
+          .header .userbox .chat a {
+            color: #d2000b !important;
+            font-size: 14px;
+            font-family: monospace;
+            text-transform: uppercase;
+          }
           .header .menu {
             cursor: pointer;
             height: 32px;
@@ -68,7 +77,9 @@ export default class Header extends React.Component {
 
           @media only screen and (min-width: 769px) {
             .header {margin: 50px auto;}
-            .header .menu {display: none;}
+            
+            .userbox .menu {display: none;}
+            .userbox .chat {display: flex !important;}
           }
         `}</style>
       </header>
