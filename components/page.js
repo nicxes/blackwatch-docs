@@ -22,7 +22,7 @@ function Page ({ title, description, children }) {
           font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-size: 1em;
 
-          background: #000;
+          background-color: #000;
           margin: 0;
         }
         .container {
@@ -64,7 +64,7 @@ function Page ({ title, description, children }) {
           line-height: 40px;
         }
         code {
-          background: #212121;
+          background-color: #212121;
           border-radius: 5px;
 
           padding: 15px;
@@ -75,9 +75,11 @@ function Page ({ title, description, children }) {
           line-height: 22px;
 
           border: 1px solid #222;
-          border-radius: 6px;
 
           width: 100%;
+        }
+        thead {
+          background-color: #0e0e0e;
         }
         th {
           color: #fff;
