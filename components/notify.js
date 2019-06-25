@@ -1,7 +1,7 @@
 export default function Notify({ title, message }) {
   return (
     <div className="notify">
-      <p>{title} — <span className="message">{message}</span></p>
+      <p>{title} <span className="message">— {message}</span></p>
       
       <style jsx>{`
         .notify {
