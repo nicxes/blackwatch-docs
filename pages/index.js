@@ -6,7 +6,7 @@ import Navigation from '../components/navigation'
 import Article from '../components/article'
 import Footer from '../components/footer'
 
-class Home extends React.Component {
+export default class Home extends React.Component {
   constructor() {
     super()
 
@@ -48,5 +48,3 @@ class Home extends React.Component {
     )
   }
 }
-
-export default Home
