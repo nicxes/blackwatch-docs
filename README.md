@@ -19,5 +19,17 @@
 ### Install dependencies
 
   ```sh
-  npm install
+  $ npm install
+  ```
+
+### Running localhost
+
+  ```sh
+  $ npm run dev
+  ```
+
+### Running production
+
+  ```sh
+  $ npm build && npm start
   ```
