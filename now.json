@@ -4,5 +4,8 @@
   "alias": "blackwatch.now.sh",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/docs", "dest": "/"}
   ]
 }
